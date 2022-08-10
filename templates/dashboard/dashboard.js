@@ -2,7 +2,10 @@ $(document).ready(function () {
   $("#frontdiv").load("./templates/dashboard/frontdiv.html");
   $("#Footerdiv").load("./templates/dashboard/Footer.html");
   $('#homepage').load('./templates/dashboard/fronthome.html')
-$("#nav").load("./templates/dashboard/nav.html"); 
+  $("#nav").load("./templates/dashboard/nav.html");
+  $("#service").load("./templates/dashboard/service.html");
+  $("#slideshow").load("./templates/dashboard/slideshow.html");
+
 });
 function opendiv() {
   document.getElementById('openmodel').style.display = "block";
@@ -26,7 +29,7 @@ function myFunction() {
   }
   document.addEventListener('click', function handleClickOutsideBox(event) {
     const box = document.getElementById('box');
-  
+
     if (!box.contains(event.target)) {
       dots.style.display = "inline";
       btnText.innerHTML = "Read more";
@@ -51,7 +54,7 @@ function myFunction1() {
   }
   document.addEventListener('click', function handleClickOutsideBox(event) {
     const box = document.getElementById('box1');
-  
+
     if (!box.contains(event.target)) {
       dots.style.display = "inline";
       btnText.innerHTML = "Read more";
@@ -76,7 +79,7 @@ function myFunction2() {
   }
   document.addEventListener('click', function handleClickOutsideBox(event) {
     const box = document.getElementById('box2');
-  
+
     if (!box.contains(event.target)) {
       dots.style.display = "inline";
       btnText.innerHTML = "Read more";
