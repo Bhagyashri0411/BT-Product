@@ -170,3 +170,10 @@ td {
     margin-bottom: 15px;
     fill: #fff;
 }
+@media (max-width: 768px) {
+   
+    .imgdiv {
+        width: 100%;
+        float: none;
+    }
+}
