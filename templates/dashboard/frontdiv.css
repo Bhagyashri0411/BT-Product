@@ -19,6 +19,9 @@
     margin: 0;
     padding: 10px 0;
 }
+.available-list.list li .box .title-body li {
+    justify-content: start;
+}
 .available-list li {
     cursor: pointer;
     background-color: #ffffff;
@@ -37,15 +40,8 @@
 .elementor-image-box-wrapper{
     text-align: center;
 }
-@media (max-width:991px) {
-    .available-list li {
-        height: 105px;
-        margin: 30px;
-        max-width: 130px;
-    }
-}
 @media (max-width: 768px) {
-    .available-list {
+    .available-list.list li{
         justify-content: center;
     }
     
