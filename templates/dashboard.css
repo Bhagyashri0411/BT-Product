@@ -389,6 +389,7 @@ li {
     .third-box, .forth-box {
         height: auto;
         margin: 0;
+        padding: 15px 15px 10px 15px;
     }
     .third-box:first-child{
         margin-bottom: 30px;
@@ -404,6 +405,20 @@ li {
     }
     .main-div {
         width: 100%;
+    }
+    .m-0{
+        padding: 0;
+    }
+    .divtec {
+        margin: -40px auto 30px;
+        font-size: 15px;
+    }
+    .footerbody{
+        padding: 0;
+    }
+    .elemfooter, .footerele2, .footerele3{
+        border: none;
+        padding: 0;
     }
     
 }

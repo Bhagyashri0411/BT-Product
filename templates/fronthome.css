@@ -72,3 +72,10 @@ button:hover{
     border: none;
     color: rgb(217, 217, 217);
 }
+@media (max-width: 768px) {
+    
+    .content p {
+        line-height: 29px;
+        font-size: 19px;
+    }
+}
