@@ -1,0 +1,63 @@
+<script src="/Modal/inquiry.js"></script>
+<link rel="stylesheet" href="/Modal/inquiry.css">
+<div class="col-md-12">
+    <div class="container">
+        <div class="modal" id="openmodel">
+            <div class="modal-content">
+                <div class="row">
+                    <div class="col-md-12">
+                        <div class="colsebtn">
+                            <button id="adduserclose" class="btnstyle" onclick="closediv()">&times;</button>
+                        </div>
+
+                    </div>
+                </div>
+                <div class="header-model">
+                    <div class="header-title">
+                        <div id="messhow">
+                            <p id="messages"></p>
+                        </div>
+                        <div class="headertitle">
+                            <h4>Get in touCH with us</h4>
+                        </div>
+
+                        <form id="resetourdata">
+                            <div class="quform-spacer">
+                                <div class="inputstyle">
+                                    <input type="text" placeholder="Your Full Name" class="input-style"
+                                        id="usertextfield">
+                                </div>
+                                <p class="alertText" id="textuser">Please Enter Your Full Name</p>
+                            </div>
+                            <div class="quform-spacer">
+                                <div class="inputstyle">
+                                    <input type="text" placeholder="Your E-mail Address" class="input-style"
+                                        id="usermailfield">
+                                </div>
+                                <p class="alertText" id="mailuser">Please Enter Your E-mail Address</p>
+                            </div>
+                            <div class="quform-spacer">
+                                <div class="inputstyle">
+                                    <input type="number" placeholder="Your Mobile Number" class="input-style"
+                                        id="usermobilefield">
+                                </div>
+                                <p class="alertText" id="mobileuser">Please Enter Your Mobile Number</p>
+                            </div>
+                            <div class="quform-spacer">
+                                <div class="inputstyle">
+                                    <textarea class="input-style" placeholder="Message"
+                                        id="usermesfield"></textarea>
+                                </div>
+                                <p class="alertText" id="messuser">Please Enter Message</p>
+                            </div>
+                        </form>
+                        <div>
+                            <button class="btnstyle" onclick="usersubdata()">SUMBIT</button>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </div>
+</div>

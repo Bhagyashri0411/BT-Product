@@ -10,9 +10,11 @@
     font-weight: bold;
     margin-bottom: 20px;
 }
-.heading{
+
+.heading {
     padding: 50px 20px;
 }
+
 .heading p {
     color: #000;
     line-height: 25px;
@@ -31,17 +33,20 @@
     border-radius: 15px;
     /* height: 480px; */
 }
+
 .mySlides:hover {
     background-color: #dde1e6;
 }
-.slide2{
+
+.slide2 {
     background-image: url('/assets/img/Automation\ -Honeywell.jpg');
     background-size: cover;
     background-position: center;
     height: 100%;
 }
+
 .slide1 {
-    background:  url('/assets/img/Refinery\ -\ Ingenero.jpg'), no-repeat;
+    background: url('/assets/img/Refinery\ -\ Ingenero.jpg'), no-repeat;
     background-size: cover;
     background-position: center;
     height: 100%;

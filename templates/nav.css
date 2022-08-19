@@ -17,9 +17,9 @@ li {
 .bigtime {
   font-size: 25px;
   float: left;
-  background: url('/assets/img/logo.jpg'), no-repeat;
+  background: url('/assets/img/logo.png'), no-repeat;
   height: 2.5em;
-  width: 8.8em;
+  width: 7em;
   background-size: contain;
 }
 a {
@@ -51,7 +51,7 @@ a {
   justify-content: space-between;
   align-items: center;
   margin-bottom: 0;
-  margin-top: 20px;
+  /* margin-top: 20px; */
 }
 
 .nav-item {
@@ -111,4 +111,11 @@ a {
 }
 #first:hover + .dropbox{
 display: block;
+}
+.nav-menu .btnstyle{
+  margin: 0;
+  box-shadow: none;
+  width: auto;
+  padding: 10px 20px;
+  margin-top: 10px;
 }

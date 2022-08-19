@@ -1,8 +1,8 @@
-<script src="./../../templates/dashboard/dashboard.js"></script>
-<link rel="stylesheet" href="../../templates/dashboard/dashboard.css" />
-<link rel="stylesheet" href="../../templates/dashboard/Infor.css" />
-<link rel="stylesheet" href="../../templates/dashboard/nav.css" />
-<link rel="stylesheet" href="../../templates/dashboard/frontdiv.css" />
+<script src="/templates/dashboard.js"></script>
+<link rel="stylesheet" href="/templates/dashboard.css" />
+<link rel="stylesheet" href="/templates/Infor.css" />
+<link rel="stylesheet" href="/templates/nav.css" />
+<link rel="stylesheet" href="/templates/frontdiv.css" />
 
 <header id="nav"></header>
 
@@ -16,9 +16,9 @@
 
     <div class="secondivs" style="background: #F9F9F9;">
         <div class="backimgdiv">
-            <div class="container" style="padding-bottom: 50px;">
+            <div class="container">
                 <div class="row">
-                    <div class="col-md-5">
+                    <div class="main-div">
                         <div class="body-head">
                             <h3>Our Services</h3>
                             <div class="body-head-line"></div>
@@ -44,68 +44,8 @@
         <div id="service"></div>
     </div>
 
-
-    <div class="col-md-12">
-        <div class="container">
-            <div class="modal" id="openmodel">
-                <div class="modal-content">
-                    <div class="row">
-                        <div class="col-md-12">
-                            <div class="colsebtn">
-                                <button id="adduserclose" class="btnstyle" onclick="closediv()">&times;</button>
-                            </div>
-
-                        </div>
-                    </div>
-                    <div class="header-model">
-                        <div class="header-title">
-                            <div id="messhow">
-                                <p id="messages"></p>
-                            </div>
-                            <div class="headertitle">
-                                <h4>Get in touCH with us</h4>
-                            </div>
-
-                            <form id="resetourdata">
-                                <div class="quform-spacer">
-                                    <div class="inputstyle">
-                                        <input type="text" placeholder="Your Full Name" class="input-style"
-                                            id="usertextfield">
-                                    </div>
-                                    <p class="alertText" id="textuser">Please Enter Your Full Name</p>
-                                </div>
-                                <div class="quform-spacer">
-                                    <div class="inputstyle">
-                                        <input type="text" placeholder="Your E-mail Address" class="input-style"
-                                            id="usermailfield">
-                                    </div>
-                                    <p class="alertText" id="mailuser">Please Enter Your E-mail Address</p>
-                                </div>
-                                <div class="quform-spacer">
-                                    <div class="inputstyle">
-                                        <input type="number" placeholder="Your Mobile Number" class="input-style"
-                                            id="usermobilefield">
-                                    </div>
-                                    <p class="alertText" id="mobileuser">Please Enter Your Mobile Number</p>
-                                </div>
-                                <div class="quform-spacer">
-                                    <div class="inputstyle">
-                                        <textarea class="input-style" placeholder="Message"
-                                            id="usermesfield"></textarea>
-                                    </div>
-                                    <p class="alertText" id="messuser">Please Enter Message</p>
-                                </div>
-                            </form>
-                            <div>
-                                <button class="btnstyle" onclick="usersubdata()">SUMBIT</button>
-                            </div>
-                        </div>
-                    </div>
-
-                </div>
-            </div>
-        </div>
-    </div>
+    <div id="modalinquiry"></div>
+    <div id="modallogin"></div>
 
     <div class="container" style="background: #fff;">
         <ul class="available-list list">
@@ -143,8 +83,7 @@
                                     <span class="arrow-text"> Application Developer</span>
                                 </li>
                             </ul>
-                            <span id="dots"></span>
-                            <ul id="more">
+                            <ul class="hideshow">
                                 <li>
                                     <span class="arrow-text"> FullStack/Mern Developer</span>
                                 </li>
@@ -155,7 +94,6 @@
                                     <span class="arrow-text"> Hire Stellar Developer</span>
                                 </li>
                             </ul>
-                            <span onclick="myFunction()" class="readmore" id="myBtn">Read more</span>
                         </div>
                     </div>
                 </div>
@@ -217,8 +155,7 @@
                                     <span class="arrow-text">Software Maintenance</span>
                                 </li>
                             </ul>
-                            <span id="dots1"></span>
-                            <ul id="more1">
+                            <ul class="hideshow">
                                 <li>
                                     <span class="arrow-text">Web Application</span>
                                 </li>
@@ -235,7 +172,6 @@
                                     <span class="arrow-text">Testing/ QA</span>
                                 </li>
                             </ul>
-                            <span onclick="myFunction1()" class="readmore" id="myBtn1">Read more</span>
                         </div>
                     </div>
                 </div>
@@ -295,8 +231,7 @@
                                     <span class="arrow-text"> Data Delivery</span>
                                 </li>
                             </ul>
-                            <span id="dots2"></span>
-                            <ul id="more2">
+                            <ul class="hideshow">
                                 <li>
                                     <span class="arrow-text"> Data Processing</span>
                                 </li>
@@ -316,7 +251,6 @@
                                     <span class="arrow-text"> Relational Data</span>
                                 </li>
                             </ul>
-                            <span onclick="myFunction2()" class="readmore" id="myBtn2">Read more</span>
                         </div>
                     </div>
                 </div>
@@ -332,7 +266,7 @@
             </div>
         </div>
         <div class="third-head">
-            <h4 style="text-align: center;">Bigtime works in <strong style="color: rgb(0, 32, 75);"> Two Ways</strong>
+            <h4 style="text-align: center;">Bigtime works in <strong style="color: rgb(0, 32, 75);"> two ways</strong>
             </h4>
         </div>
         <div class="third-body">
@@ -449,7 +383,8 @@
         </div>
     </div>
 
-    <div class="thirdiv" id="slideshow" style="background-color: #fff;"></div>
+    <!-- <div class="thirdiv" id="slideshow" style="background-color: #fff;"></div> -->
+    <div id="clients"></div>
 
     <!-- Forth -->
     <div class="thirdiv" id="services" style="padding-top: 10px;">
@@ -467,10 +402,9 @@
         </div>
         <div class="third-body">
             <div class="container">
-                <div class="col-md-12 m-0">
-                    <div class="col-md-12 m-0">
-                        <div class="row">
-                            <div class="col-md-12" id="frontdiv">
+                <!-- <div class="col-md-12 m-0">
+                    <div class="col-md-12 m-0"> -->
+                        <div class="row" id="frontdiv">
 
                                 <!-- useless code -->
                                 <!-- <div class="elerow">
@@ -487,9 +421,9 @@
                                 </div>
 
                             </div> -->
-                            </div>
-                        </div>
-                    </div>
+                            <!-- </div> -->
+                        <!-- </div>
+                    </div> -->
                 </div>
             </div>
         </div>
