@@ -109,3 +109,12 @@
         background-color: #000000;
     }
 }
+@media (max-width: 768px) {
+    
+    .available-list, .available-list-tech {
+        justify-content: center;
+    }
+    .sidebox{
+        margin-bottom: 20px;
+    }
+}

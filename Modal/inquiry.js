@@ -26,7 +26,7 @@ function usersubdata() {
                 "Content-Type": "application/json",
             },
             data: JSON.stringify(myData),
-            url: "http://192.168.46.105:8090/dash/postData",
+            url: "http://localhost:8090/dash/postData",
             success: function (msg) {
                 if (msg == "Inserted Sucessfully") {
                     document.getElementById('messages').innerText = "Successful";

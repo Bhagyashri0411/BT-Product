@@ -27,7 +27,7 @@ function startsubdata() {
                 "Content-Type": "application/json",
             },
             data: JSON.stringify(myData),
-            url: "http://192.168.1.106:8090/start/insertdata",
+            url: "http://localhost:8090/start/insertdata",
             success: function (msg) {
                 if (msg == "Inserted Sucessfully") {
                     document.getElementById('startmess').innerText = "Successful";
