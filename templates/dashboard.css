@@ -16,13 +16,19 @@
     display: none;
     color: red;
 }
+.main-div{
+    width: 450px;
+}
 .secondiv {
     padding-top: 80px;
 }
 .hero__description{
     color: #fff;
 }
-#more, #more1, #more2 {display: none;}
+
+.hideshow{
+    display: none;
+}
 .box {
     background-color: #FFFFFF;
     border-style: solid;
@@ -33,6 +39,10 @@
     color: rgb(0, 32, 75);
     z-index: 1;
     width: 350px;
+}
+
+.box:hover  .hideshow {
+    display: inline;
 }
 
 .pd-100 {
@@ -129,6 +139,7 @@ li {
     margin-bottom: 50px;
     font-size: 2.5em;
     font-family: "Poppins", Sans-serif;
+    text-transform: uppercase;
 }
 
 .body-title p,
@@ -390,6 +401,9 @@ li {
     }
     .ps-img {
         background-size: cover;
+    }
+    .main-div {
+        width: 100%;
     }
     
 }

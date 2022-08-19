@@ -1,0 +1,111 @@
+.available-list, .available-list-tech {
+    padding: 0;
+    margin: 0;
+    list-style: none;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+.available-list.list {
+    margin-top: 70px;
+}
+
+.available-list.list li {
+    width: auto;
+    height: auto;
+    max-width: none;
+    background-color: transparent;
+    justify-content: start;
+    box-shadow: none;
+    margin: 0;
+    padding: 10px 0;
+}
+
+.available-list.list li .box .title-body li {
+    justify-content: start;
+}
+
+.sideboxtec .available-list-tech li {
+    display: flex;
+    color: #000000;
+    font-size: 11px;
+    align-items: center;
+    margin: 2px 5px;
+    justify-content: center;
+    /* max-width: 150px; */
+}
+
+.available-list li {
+    cursor: pointer;
+    background-color: #ffffff;
+    display: flex;
+    color: #000000;
+    font-size: 18px;
+    align-items: center;
+    justify-content: center;
+    max-width: 150px;
+    padding: 10px;
+    box-shadow: rgb(0 0 0 / 9%) 0px 3px 12px;
+    width: 244px;
+    height: 110px;
+    margin: 30px;
+}
+
+.elementor-image-box-wrapper {
+    text-align: center;
+}
+
+.cardtec {
+    background-color: #dde1e6;
+    padding: 10px 15px;
+    border-radius: 10px;
+}
+
+.sidebox {
+    padding: 10px 20px;
+    background-color: #fff;
+    box-shadow: rgb(0 0 0 / 9%) 0px 3px 12px;
+}
+.sidebox:hover  .linetitle{
+    border-color: #fff;
+}
+.sidebox:hover {
+    background-color: #dde1e6;
+}
+.sidebox:hover .cardtec {
+    background-color: #fff;
+}
+.sideboxtec ul {
+    display: flex;
+    justify-content: space-between;
+}
+
+.sidebox h1 {
+    font-size: 28px;
+    color: rgb(0, 32, 75);
+}
+
+.linetitle {
+    margin: 30px 0;
+    padding: 0px 0px 0px 10px;
+    border-style: solid;
+    border-width: 0px 0px 0px 5px;
+    border-color: #dde1e6;
+    transition: background .3s, border .3s, border-radius .3s, box-shadow .3s, -webkit-border-radius .3s, -webkit-box-shadow .3s;
+
+}
+
+@media (max-width: 768px) {
+    .available-list.list li {
+        justify-content: center;
+    }
+
+}
+
+@media only screen and (max-width: 1200px) and (min-width:769px) {
+    .col6 {
+        width: 100%;
+        background-color: #000000;
+    }
+}
